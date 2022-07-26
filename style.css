@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 46px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 28px;
+    margin-right: 9px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 0 8px;
+}
+
+.container{
+    overflow-y: scroll;
+    height: 65vh; 
+    background-color: rgb(7, 7, 7);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 65%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("Gcontainer.jpg"); 
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    position: sticky;
+    height: 105px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar{
+    width: 100%;
+    margin-bottom: 25px;
+    height: 5px;
+    cursor: pointer;
+}
+
+.icons i{
+    cursor: pointer;
+    margin: 0 10px;
+    margin-bottom: 30px;
+}
+
+.songList h1{
+    margin-bottom: 8px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: transparent;
+    width: 110%;
+    margin: 1px 0;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* .smg{
+     text-decoration: none;
+     color: white;
+} */
+
+.songItem img{
+    width: 35px;
+    margin: 0 5px;
+    border-radius: 6px;
+} 
+
+.timestamp{
+    margin: 0 30px;
+}
+
+.timestamp i{
+    margin-left: 15px !important;
+    color: white !important; 
+}
+
+.songInfo{
+    position: absolute;
+    left: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 700px) {
+    body{
+        font-size: 10px;
+    }
+    .container{
+        background-image: url("img.jpg");
+    }
+    #myProgressBar{
+        margin-bottom: 41px;
+    }
+    .songInfo{
+        margin-bottom: 50px;
+        margin-left: 75px;
+    }
+    
+}
